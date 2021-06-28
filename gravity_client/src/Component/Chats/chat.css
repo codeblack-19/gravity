@@ -1,0 +1,163 @@
+._ch_wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    background: linear-gradient(45deg, rgb(255, 63, 63), rgb(54, 75, 167));
+}
+
+._ch_wrapper ._ms_bx{
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    box-shadow: 0 0 20px -7px rgb(255, 255, 255);
+    margin: 10px 0;
+    background-color: black;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+._ch_wrapper ._ms_bx .header{
+    background-color: white;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+._ms_bx .header p:first-child{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: blue;
+}
+
+._ms_bx .header p:nth-child(2){
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+}
+
+._ms_bx ._ms_area{
+    height: 55vh;
+    /* background:rgb(54, 75, 167); */
+    padding: 15px 5px 0;
+    overflow-y: auto;
+}
+
+._ms_area::-webkit-scrollbar{
+    width: 3px;
+    background-color: blue;
+}
+
+._ms_area::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 218, 218);
+}
+
+._ms_area .ms_mai{
+    display: flex;
+    align-items: center;
+}
+
+._ms_area ._text_me,
+._ms_area ._text_other{
+    min-width: 30px;
+    margin: 7px;
+    padding: 10px 9px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+._ms_area ._text_me{
+    margin-left: auto;
+}
+
+._ms_area ._text_other ._m_user_name{
+    text-align: right;
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    top: -10px;
+    padding: 3px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+._ms_area ._text_me ._m_user_name{
+    text-align: right;
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    top: -10px;
+    background-color: white;
+    padding: 3px;
+    left: 10px;
+    border-radius: 5px;
+    color: blue;
+    display: none;
+}
+
+._ms_area ._text_other{
+    background-color: whitesmoke;
+    border-radius: 0px 10px 10px 10px;
+}
+
+._ms_area ._text_me{
+    background-color: blue;
+    border-radius: 10px 10px 0px 10px;
+    color: white;
+}
+
+._ms_bx ._input_area {
+    padding: 0 0 5px;
+    display: flex;
+    z-index: 2;
+}
+
+._ms_bx ._input_area input{
+    width: 75%;
+    padding: 12px 7px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-radius: 0 !important;
+}
+
+._ms_bx ._input_area input:focus{
+    outline: none;
+}
+
+._ms_bx ._input_area button{
+    width: 25%;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+    background: linear-gradient(45deg, rgb(192, 26, 26), rgb(54, 75, 167));
+}
+
+._ms_bx ._input_area button:hover{
+    background: linear-gradient(90deg, rgb(13, 58, 155), rgb(233, 13, 13));
+}
+
+@media (max-width: 426px){
+    ._ch_wrapper ._ms_bx{
+        width: 300px;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 376px){
+    ._ch_wrapper ._ms_bx{
+        width: 100%;
+        padding: 5%;
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    ._ms_bx ._ms_area{
+        height: 70vh;
+    }
+}
